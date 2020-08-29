@@ -1,0 +1,182 @@
+/*
+Theme Name: ofc
+Text Domain: ofc
+Version: 1.0
+Description: 
+Tags: left
+Author: prtysh
+Author URI: prtysh.github.io
+*/
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family:'Josefin Sans', sans-serif;
+}
+
+/* body{
+    width:60%;
+    background-color: black;
+} */
+
+a {
+    text-decoration: none;
+    color: rgb(61, 146, 201);
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+.logo {
+    height: 80px;
+}
+
+.pure-menu-list {
+    text-align: center;
+    padding: 1rem;
+    align-items: center;
+}
+
+.front-image {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.front-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 3rem;
+    padding-left: 0;
+}
+
+.front-head {
+    padding: 0;
+    margin: 0em;
+}
+
+.know-more{
+    background-color: black;
+    margin-top: auto;
+    margin-right: auto;
+    display: inline-block;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.know-more p{
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+    color: white;
+    color: pink;
+}
+
+.icon-container{
+    margin-top: 1rem;
+}
+
+.icon-body{
+    display: grid;
+    align-self: center;
+}
+
+.front-icon{
+    width: 50px;
+    margin: auto;
+}
+
+.icon-text{
+    margin: auto;
+}
+
+.icon-head{
+    margin:auto;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.blog-container{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.blog-body{
+    padding:1rem;
+    border-bottom: 2px solid #E11E7A;
+}
+
+.blog-img{
+    width: 100%;
+}
+
+.blog-head{
+    border-right: 2px solid lightgray;
+}
+
+.date{
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #E11E7A;
+}
+
+.tag{
+    padding:0.1rem;
+    border: 2px solid #E11E7A;
+    border-radius: 0.5rem;
+    font-size: 0.7rem;
+    margin: auto;
+}
+
+.box{
+    border: 2px solid black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.resource-line{
+    padding: 1rem;
+    padding-bottom: 2rem;
+    margin: auto;
+}
+
+.resource-head{
+    text-align: center;
+}
+
+.resource-img{
+    border: none;
+    width: 50%;
+}
+
+.separation{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height:280px;
+}
+
+.client-container{
+    margin: auto;
+}
+
+.client{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.ofc-footer{
+    background-color: black;
+    color: white;
+}
