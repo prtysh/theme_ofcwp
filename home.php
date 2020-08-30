@@ -55,8 +55,6 @@
 
     <?php ofcwp_numeric_posts_nav(); ?>
 
-
-
   </main>
 </div>
 

@@ -411,30 +411,84 @@ textarea,
   min-height: 50vh;
 }
 
+/* start of styling of members pages */
+
+.ofcwp-member-container{
+  align-items: center;
+  justify-content: center;
+}
+
 .ofcwp-member-entry-content{
   padding: 10px;
+  /* border: 1px solid #e11e7a; */
 }
 
 .ofcwp-member-card-img{
+  display: block;
+  margin: auto;
   width: 120px;
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-}
-.ofcwp-member-card-title{
-  color: #e11e7a;
-  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.ofcwp_member_card_tags-holder{
-  
+.ofcwp-member-card-title{
+  /* height: 20px; */
+  color: #e11e7a;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.ofcwp_member_card_tags_holder{
+  /* height: 40px; */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 10px;
 }
 
 .ofcwp_member_card_tag{
   font-size: 14px;
+  text-align: center;
+  margin: 0;
 }
 
 .ofcwp-member-card-content{
+  margin: auto;
+  max-width: 180px;
+  height: 200px;
   font-size: 12px;
-  padding: 2px;
+  padding: 10px;
+  overflow-y: scroll;
+  border: 1px solid #e11e7a;
+  border-radius: 10px;
 }
+
+.ofcwp-member-card-content::-webkit-scrollbar{
+  display: none;
+}
+
+.ofcwp-member-card-content{ /* for other browsers */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* end of styling of members pages */
+
+/* start of ofcknowledge styling */
+.ofcwp-knowledge-sub-role-text{
+  padding: 20px;
+    font-weight: 650;
+}
+
+.ofcwp-knowledge-number{
+  position: absolute;
+  margin-left: -25px;
+  margin-top: -20px;
+  font-size: 40px;
+    color: #e11e7a;
+}
+
+/* end of ofcknowledge styling */

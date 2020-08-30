@@ -160,6 +160,7 @@ function ofcwp_scripts()
 	wp_enqueue_style('purecss', "https://unpkg.com/purecss@2.0.3/build/pure-min.css", array(), "2.0.3", 'all');
 	wp_enqueue_style('ofcwp-style', get_stylesheet_uri(), ['purecss'], time(), 'all');
 	wp_enqueue_style('ofcwp-custom-style', get_stylesheet_directory_uri() . '/css/custom.css', ['ofcwp-style'], time(), 'all');
+	wp_enqueue_style('ofcwp-carousel', get_stylesheet_directory_uri() . '/css/carousel.css', ['ofcwp-custom-style'], time(), 'all');
 	wp_style_add_data('ofcwp-style', 'rtl', 'replace');
 
 	wp_enqueue_script('ofcwp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
