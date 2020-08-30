@@ -1,3 +1,9 @@
+<?php
+/* 
+Template Name: Archives
+*/
+?>
+
 <?php get_header('splash'); ?>
 
 <div id="primary" class="content-area">
@@ -12,14 +18,8 @@
     <div class="ofcwp-blog-container pure-g">
       <div class="pure-u-16-24">
 
-      <?php
-      $args = array('post_type' => 'post', 'posts_per_page' => 3);
-      $the_query = new WP_Query($args);
-      ?>
-      <?php if ($the_query->have_posts()) : ?>
-        <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
-        <?php // if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <?php get_template_part('template-parts/content-posts', get_post_format()); ?>
             <div class="ofcwp-blog-card pure-g">
               <div class="ofcwp-blog-card-img-frame pure-u-11-24">

@@ -266,3 +266,12 @@ function ofcwp_numeric_posts_nav()
 	echo '<li> &#9654; </li>' . "\n";
 	echo '</ul></div>' . "\n";
 }
+
+// adding custom post type
+function ofcwp_add_member_post_type( $query ) {
+    if ( is_home() && $query->is_main_query() )
+        $query->set( 'post_type', array( 'post', 'member' ) );
+    return $query;
+}
+
+add_action( 'pre_get_posts', 'ofcwp_add_member_post_type' );

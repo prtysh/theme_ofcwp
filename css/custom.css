@@ -36,6 +36,11 @@ textarea,
   outline: 0px;
 }
 
+.ofcwp-banner-text {
+  
+}
+
+
 /* custom search styling */
 .ofcwp-search-tb
 {
@@ -404,4 +409,32 @@ textarea,
 /* styling of pages */
 .entry-content {
   min-height: 50vh;
+}
+
+.ofcwp-member-entry-content{
+  padding: 10px;
+}
+
+.ofcwp-member-card-img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.ofcwp-member-card-title{
+  color: #e11e7a;
+  font-size: 18px;
+}
+
+.ofcwp_member_card_tags-holder{
+  
+}
+
+.ofcwp_member_card_tag{
+  font-size: 14px;
+}
+
+.ofcwp-member-card-content{
+  font-size: 12px;
+  padding: 2px;
 }
