@@ -157,13 +157,18 @@ add_action('widgets_init', 'ofcwp_widgets_init');
 function ofcwp_scripts()
 {
 	# wp_enqueue_style( 'ofcwp-style', get_stylesheet_uri() , array(), _S_VERSION );
-	wp_enqueue_style('purecss', "https://unpkg.com/purecss@2.0.3/build/pure-min.css", array(), "2.0.3", 'all');
-	wp_enqueue_style('ofcwp-style', get_stylesheet_uri(), ['purecss'], time(), 'all');
+	wp_enqueue_style('ofcwp-bootstrap', "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", array(), "4.5.2", 'all');
+	wp_enqueue_style('ofcwp-purecss', "https://unpkg.com/purecss@2.0.3/build/pure-min.css", ['ofcwp-bootstrap'], "2.0.3", 'all');
+	wp_enqueue_style('ofcwp-style', get_stylesheet_uri(), ['ofcwp-purecss'], time(), 'all');
 	wp_enqueue_style('ofcwp-custom-style', get_stylesheet_directory_uri() . '/css/custom.css', ['ofcwp-style'], time(), 'all');
 	wp_enqueue_style('ofcwp-carousel', get_stylesheet_directory_uri() . '/css/carousel.css', ['ofcwp-custom-style'], time(), 'all');
+	wp_enqueue_style('ofcwp-qutoe-page', get_stylesheet_directory_uri() . '/css/quote-page.css', ['ofcwp-custom-style'], time(), 'all');
 	wp_style_add_data('ofcwp-style', 'rtl', 'replace');
 
 	wp_enqueue_script('ofcwp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
+	wp_enqueue_script('ofcwp-jquery', "https://code.jquery.com/jquery-3.5.1.slim.min.js", "ofcwp-navigation", "3.5.1", true);
+	wp_enqueue_script('ofcwp-popperjs', "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js", "ofcwp-jquery", "3.5.1", true);
+	wp_enqueue_script('ofcwp-bootsrapjs', "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js", "ofcwp-popperjs", "3.5.1", true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
@@ -229,11 +234,11 @@ function ofcwp_numeric_posts_nav()
 	}
 
 	echo '<div class="ofcwp-pagination"><ul>' . "\n";
-	echo '<li class="ofcwp-pagination-arrow"> &#9664; </li>' . "\n";
+	// echo '<li class="ofcwp-pagination-arrow"> &#x25C5; </li>' . "\n";
 
 	/** Previous Post Link */
 	if (get_previous_posts_link())
-		printf('<li>%s</li>' . "\n", get_previous_posts_link('&#9679'));
+		printf('<li>%s</li>' . "\n", get_previous_posts_link('&#x25C5'));
 
 	/** Link to first page, plus ellipses if necessary */
 	if (!in_array(1, $links)) {
@@ -263,8 +268,8 @@ function ofcwp_numeric_posts_nav()
 
 	/** Next Post Link */
 	if (get_next_posts_link())
-		printf('<li>%s</li>' . "\n", get_next_posts_link('&#9679'));
-	echo '<li> &#9654; </li>' . "\n";
+		printf('<li>%s</li>' . "\n", get_next_posts_link('&#x25BB'));
+	// echo '<li class="ofcwp-pagination-arrow"> &#x25BB; </li>' . "\n";
 	echo '</ul></div>' . "\n";
 }
 

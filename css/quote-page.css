@@ -1,0 +1,21 @@
+.ofcwp-with-quote-container{
+    align-items: flex-end;
+}
+
+.ofcwp-quote-container{
+    
+}
+.ofcwp-quote{
+    padding-right: 2rem;
+    text-align: right;
+}
+.ofcwp-quotation-marks{
+    font-size: 40px;
+    color: #e11e7a;
+    text-align: right;
+    padding-right: 1.5rem;
+}
+.ofcwp-quote-content{
+    padding-left: 1rem;
+}
+        

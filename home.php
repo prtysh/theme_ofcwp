@@ -42,7 +42,7 @@
         else : ?>
           <?php get_the_tags(); ?>
           <?php get_template_part('template-parts/content', 'none'); ?>
-          <p> <?php ofcw_entry_footer(); ?></p>
+          <p> <?php ofcwp_entry_footer(); ?></p>
         <?php endif; ?>
         <?php // echo paginate_links(); 
         ?>
