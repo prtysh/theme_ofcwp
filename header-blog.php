@@ -54,4 +54,5 @@
 					?>
 				</div>
 			</nav><!-- #site-navigation -->
+		<?php get_template_part( 'template-parts/content', 'banner-blog' ) ;?>
 	</header><!-- #masthead -->

@@ -162,7 +162,8 @@ function ofcwp_scripts()
 	wp_enqueue_style('ofcwp-style', get_stylesheet_uri(), ['ofcwp-purecss'], time(), 'all');
 	wp_enqueue_style('ofcwp-custom-style', get_stylesheet_directory_uri() . '/css/custom.css', ['ofcwp-style'], time(), 'all');
 	wp_enqueue_style('ofcwp-carousel', get_stylesheet_directory_uri() . '/css/carousel.css', ['ofcwp-custom-style'], time(), 'all');
-	wp_enqueue_style('ofcwp-qutoe-page', get_stylesheet_directory_uri() . '/css/quote-page.css', ['ofcwp-custom-style'], time(), 'all');
+	wp_enqueue_style('ofcwp-quote-page', get_stylesheet_directory_uri() . '/css/quote-page.css', ['ofcwp-custom-style'], time(), 'all');
+	wp_enqueue_style('ofcwp-advanced-fields', get_stylesheet_directory_uri() . '/css/advanced-fields.css', ['ofcwp-quote-page'], time(), 'all');
 	wp_style_add_data('ofcwp-style', 'rtl', 'replace');
 
 	wp_enqueue_script('ofcwp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
@@ -281,3 +282,11 @@ function ofcwp_add_member_post_type( $query ) {
 }
 
 add_action( 'pre_get_posts', 'ofcwp_add_member_post_type' );
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );

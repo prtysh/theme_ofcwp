@@ -3,11 +3,11 @@
 Template Name: ofcknowledge
 */
 ?>
-<?php get_header('archive-ofcknowledge'); ?>
+<?php get_header('splash'); ?>
 
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
-    <p class="ofcwp-knowledge-abstract"> We undertake research, training, and the development of learning tools, products and experiences for building knowledge and capacity on issues of social justice.</p>
+    <p class="ofcwp-page-start ofcwp-knowledge-abstract"> We undertake research, training, and the development of learning tools, products and experiences for building knowledge and capacity on issues of social justice.</p>
     <div class="ofcwp-knowledge-role pure-g">
       <div class="ofcwp-knowledge-sub-role pure-u-12-24">
         <p class="ofcwp-knowledge-sub-role-text"> <span class="ofcwp-knowledge-number"> 1 </span> We curate, create and share knowledge to develop a more nuanced understanding of pressing issues of social justice, inform public debates, and build policy-legal insights and interventions.</p>

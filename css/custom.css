@@ -14,11 +14,39 @@ textarea,
   margin: auto;
 }
 
+.ofcwp-main-container{
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.ofcwp-page-start{
+  padding-top: 100px;
+}
+
+.ofcwp-main-left{
+  margin-top: auto;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
 .home {
   width: 90%;
   max-width: 1000px;
   margin: auto;
 }
+
+/* start of menu styling */
+.ofcwp-logo{
+  width: 78px;
+}
+
+.navbar-nav{
+  margin: auto;
+}
+.menu-item{
+  padding: 0.4rem;
+}
+/* end of meny styling */
 
 .ofcwp-landing-container {
   padding-top: 1rem;
@@ -228,8 +256,8 @@ textarea,
 
 #ofcwp-search-cover {
   position: absolute;
-  right: 20px;
-  width: 450px;
+  right: 100px;
+  width: 350px;
   background-color: transparent;
   border-radius: 20px;
 }
@@ -486,10 +514,6 @@ textarea,
   margin: auto;
 }
 
-.menu-item {
-  padding: 1rem;
-}
-
 /* end of header styling */
 
 /* pagination navigation styling */
@@ -531,7 +555,7 @@ textarea,
 
 /* styling of pages */
 .entry-content {
-  min-height: 50vh;
+  min-height: 10vh;
 }
 
 /* start of styling of members pages */
@@ -616,3 +640,25 @@ textarea,
 }
 
 /* end of ofcknowledge styling */
+
+.ofcwp-front-icon {
+  width: 100px;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: auto;
+  border: 1px solid #000000;
+}
+
+.ofcwp-icon-text{
+  height: 50px;
+  text-align: center;
+}
+
+/* bootstrap changes */
+.btn-pink{
+  background-color: #e11e7a;
+  width: 80%;
+  margin: auto;
+  border: none;
+  align-self: flex-end;
+}

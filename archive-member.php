@@ -3,11 +3,11 @@
 Template Name: Members
 */
 ?>
-<?php get_header('archive-member'); ?>
+<?php get_header('splash'); ?>
 
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
-    <div class="ofcwp-member-container pure-g">
+    <div class="ofcwp-page-start ofcwp-member-container pure-g">
       <?php
       $args = array('post_type' => 'member', 'posts_per_page' => 100);
       $the_query = new WP_Query($args);

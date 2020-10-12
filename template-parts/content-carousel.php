@@ -2,7 +2,7 @@
 
 <?php if (get_field('ofcwp_carousel_header')) : ?>
   <h2 class="ofcwp-carousel-header"><span><?php the_field('ofcwp_carousel_header'); ?></span> </h2>
-<?php endif; ?>
+
 
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -57,3 +57,4 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<?php endif; ?>

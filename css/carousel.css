@@ -1,7 +1,7 @@
-.ofcwp-carousel-header{
+.ofcwp-carousel-header {
   font-family: "Josefin Sans", sans-serif;
   width: 100%;
-  border-bottom: 2px solid #999999; 
+  border-bottom: 2px solid #999999;
   line-height: 0.1em;
   letter-spacing: normal;
   font-size: 20px;
@@ -9,12 +9,12 @@
   /* padding-bottom: 1rem; */
 }
 
-.ofcwp-carousel-header span{
+.ofcwp-carousel-header span {
   background: #ffffff;
   padding: 1rem;
 }
 
-.carousel-inner{
+.carousel-inner {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -28,10 +28,9 @@
   object-fit: cover;
 }
 
-.ofcwp-img-test{
+.ofcwp-img-test {
   overflow: hidden;
   object-fit: cover;
-
 }
 
 .ofcwp-carousel-img {
@@ -44,6 +43,7 @@
   margin: auto;
   padding-left: 1rem;
   padding-right: 3rem;
+  background-color: #ffffff;
 }
 
 .ofcwp-img-caption h2 {
@@ -53,24 +53,23 @@
   border-bottom: 1px solid#e11e7a;
 }
 
-.ofcwp-img-caption p{
+.ofcwp-img-caption p {
+  height: 100px;
   font-size: 11px;
 }
 
-.carousel-control-prev-icon{
-  
+.carousel-control-prev-icon {
 }
 
-.carousel-control-next-icon{
-
+.carousel-control-next-icon {
 }
 
 .carousel-control-next,
 .carousel-control-prev {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
   justify-content: flex-start;
   text-align: left;
 }
@@ -80,6 +79,6 @@
   text-align: right;
 }
 
-.carousel-indicators{
+.carousel-indicators {
   filter: invert(50%);
 }

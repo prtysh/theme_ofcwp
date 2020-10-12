@@ -33,8 +33,8 @@ get_header('front');
 	<div class="ofcwp-front-we-exist-grid">
 		<div class="ofcwp-front-we-exist-1">
 			<h3 class="ofcwp-front-we-exist-head">Because</h1>
-			<h3 class="ofcwp-front-we-exist-head">We Provide</h1>
-			<h3 class="ofcwp-front-we-exist-head">To</h1>	
+				<h3 class="ofcwp-front-we-exist-head">We Provide</h1>
+					<h3 class="ofcwp-front-we-exist-head">To</h1>
 		</div>
 		<div class="ofcwp-front-we-exist-2">
 			<p class="ofcwp-front-we-exist-text">We believe that a radically kinder world is a more just and equitable world.</p>
@@ -47,11 +47,11 @@ get_header('front');
 		</div>
 	</div>
 	<div>
-		 <p class="ofcwp-front-we-exist-quote">
-			 <span class="ofcwp-front-quotes"> " </span> Nurturing radical kindness towards a world built on social justice led by communities of care.
-		  <span class="ofcwp-front-quotes"> " </span>
-		 </p>
-		</div>
+		<p class="ofcwp-front-we-exist-quote">
+			<span class="ofcwp-front-quotes"> " </span> Nurturing radical kindness towards a world built on social justice led by communities of care.
+			<span class="ofcwp-front-quotes"> " </span>
+		</p>
+	</div>
 	<div class="pure-g ofcwp-front-separation">
 		<div class="pure-u-4-5">
 			<svg width="100%" viewbox="0 0 800 200">
@@ -67,44 +67,8 @@ get_header('front');
 		</div>
 	</div>
 
-	<div class="pure-g icon-container">
-		<div class="pure-u-4-24 icon-body">
-			<img src="wp-content/themes/ofcwp/assets/images/Icons/Impact/Survivors.svg" alt="" class="front-icon">
-			<h1 class="icon-head">100+</h1>
-			<p class="icon-text">Survivors</p>
-			<p class="icon-text">Supported</p>
-		</div>
-		<div class="pure-u-4-24 icon-body">
-			<img src="wp-content/themes/ofcwp/assets/images/Icons/Impact/Leaders.svg" alt="" class="front-icon">
-			<h1 class="icon-head">7,000+</h1>
-			<p class="icon-text">Leaders</p>
-			<p class="icon-text">Trained</p>
-		</div>
-		<div class="pure-u-4-24 icon-body">
-			<img src="wp-content/themes/ofcwp/assets/images/Icons/Impact/LearningHours.svg" alt="" class="front-icon">
-			<h1 class="icon-head">60,000+</h1>
-			<p class="icon-text">Learning</p>
-			<p class="icon-text">Hours</p>
-		</div>
-		<div class="pure-u-4-24 icon-body">
-			<img src="wp-content/themes/ofcwp/assets/images/Icons/Impact/Trainings.svg" alt="" class="front-icon">
-			<h1 class="icon-head">500+</h1>
-			<p class="icon-text">Trainings</p>
-			<p class="icon-text">Delivered</p>
-		</div>
-		<div class="pure-u-4-24 icon-body">
-			<img src="wp-content/themes/ofcwp/assets/images/Icons/Impact/Resources.svg" alt="" class="front-icon">
-			<h1 class="icon-head">20+</h1>
-			<p class="icon-text">Resources</p>
-			<p class="icon-text">Created</p>
-		</div>
-		<div class="pure-u-4-24 icon-body">
-			<img src="wp-content/themes/ofcwp/assets/images/Icons/Impact/Total.svg" alt="" class="front-icon">
-			<h1 class="icon-head">10,000+</h1>
-			<p class="icon-text">Total</p>
-			<p class="icon-text">Outreach</p>
-		</div>
-	</div>
+	
+	<?php get_template_part('template-parts/content', 'impact-icons'); ?>
 
 
 	<div class="pure-g ofcwp-front-separation">
@@ -253,35 +217,7 @@ get_header('front');
 		</div>
 	</div>
 
-	<div class="ofcwp-front-client-container">
-		<div class="ofcwp-front-client-img-container">
-			<img class="ofcwp-front-client-img" src="wp-content/themes/ofcwp/assets/images/clients_partners/Arguendo.jpg" alt="">
-		</div>
-		<div class="ofcwp-front-client-img-container">
-			<img class="ofcwp-front-client-img" src="wp-content/themes/ofcwp/assets/images/clients_partners/AURO.jpeg" alt="">
-		</div>
-		<div class="ofcwp-front-client-img-container">
-			<img class="ofcwp-front-client-img" src="wp-content/themes/ofcwp/assets/images/clients_partners/Gently altered.webp" alt="">
-		</div>
-		<div class="ofcwp-front-client-img-container">
-			<img class="ofcwp-front-client-img" src="wp-content/themes/ofcwp/assets/images/clients_partners/Gov of haryana.png" alt="">
-		</div>
-		<div class="ofcwp-front-client-img-container">
-			<img class="ofcwp-front-client-img" src="wp-content/themes/ofcwp/assets/images/clients_partners/Belabai Morarka School Nawalgarh.jpeg" alt="">
-		</div>
-		<div class="ofcwp-front-client-img-container">
-			<img class="ofcwp-front-client-img" src="wp-content/themes/ofcwp/assets/images/clients_partners/Canada Consulate General.jpg" alt="">
-		</div>
-		<div class="ofcwp-front-client-img-container">
-			<img class="ofcwp-front-client-img" src="wp-content/themes/ofcwp/assets/images/clients_partners/HNLU.png" alt="">
-		</div>
-		<div class="ofcwp-front-client-img-container">
-			<img class="ofcwp-front-client-img" src="wp-content/themes/ofcwp/assets/images/clients_partners/Poshan Abhiyaan.png" alt="">
-		</div>
-		<div class="ofcwp-front-client-img-container">
-			<img class="ofcwp-front-client-img" src="wp-content/themes/ofcwp/assets/images/clients_partners/MINDS Foundation.png" alt="">
-		</div>
-	</div>
+	<?php get_template_part('template-parts/content', 'clients-partners'); ?>
 
 	<div class="pure-g ofcwp-front-separation">
 		<div class="pure-u-4-5">

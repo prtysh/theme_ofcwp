@@ -1,4 +1,4 @@
-<?php get_header('splash'); ?>
+<?php get_header('blog'); ?>
 
 <div id="primary" class="content-area">
   

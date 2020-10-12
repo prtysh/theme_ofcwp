@@ -10,25 +10,26 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<!-- <?php the_title('<h1 class="entry-title">', '</h1>'); ?> -->
-	</header><!-- .entry-header -->
+<div class="ofcwp-page-start ofcwp-main-container">
+	<div class="ofcwp-main-left">
+		<?php if (get_field('ofcwp_quote')) : ?>
+			<blockquote class="ofcwp-quote"> <?php the_field('ofcwp_quote'); ?> </blockquote>
+		<?php endif; ?>
 
-	<!-- <?php ofcwp_post_thumbnail(); ?> -->
-	<div class="pure-g">
-		<div class="entry-content pure-u-4-5">
-			<?php
-			the_content();
 
-			wp_link_pages(
-				array(
-					'before' => '<div class="page-links">' . esc_html__('Pages:', 'ofcwp'),
-					'after'  => '</div>',
-				)
-			);
-			?>
-		</div><!-- .entry-content -->
 	</div>
+	<div class="entry-content ofcwp-main-right">
+		<?php
+		the_content();
+
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . esc_html__('Pages:', 'ofcwp'),
+				'after'  => '</div>',
+			)
+		);
+		?>
+	</div><!-- .entry-content -->
+</div>
 
 </article><!-- #post-<?php the_ID(); ?> -->

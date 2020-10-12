@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -15,23 +16,38 @@
 get_header('splash');
 ?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+	<?php get_template_part('template-parts/content', 'page'); ?>
 
-			get_template_part( 'template-parts/content', 'page' );
+	<?php get_template_part('template-parts/content', 'tag-cloud'); ?>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+	<?php get_template_part('template-parts/content', 'bullets'); ?>
 
-		endwhile; // End of the loop.
-		?>
+	<?php get_template_part('template-parts/content', 'cards');	?>
 
-	</main><!-- #main -->
+	<div class=""><?php get_template_part('template-parts/content', 'carousel'); ?></div>
+
+	<?php if (get_the_title() == "Impact") : ?>
+		<div style="padding-top: 1rem;"></div>
+		<h2 class="ofcwp-carousel-header"><span> Impact Numbers </span> </h2>
+		<div style="padding-bottom: 2rem;"></div>
+		<?php get_template_part('template-parts/content', 'impact-icons'); ?>
+		<div style="padding-bottom: 2rem;"></div>
+	<?php endif; ?>
+
+	<?php get_template_part('template-parts/content', 'get-involved-icons'); ?>
+
+	<?php get_template_part('template-parts/content', 'advocacy-icons'); ?>
+
+	<?php if (get_field('ofc_testimonial_title')) : ?>
+		<?php get_template_part('template-parts/content', 'testimonial'); ?>
+	<?php endif; ?>
+
+	<?php get_template_part('template-parts/content', 'front-blog'); ?>
+
+	<?php get_template_part('template-parts/content', 'contact-us'); ?>
+</main><!-- #main -->
 
 <?php
 // get_sidebar('splash');
