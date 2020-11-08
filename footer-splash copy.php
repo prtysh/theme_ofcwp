@@ -5,10 +5,52 @@
 
 ?>
 
+<footer id="colophon" class="site-footer">
+	<div class="site-info">
+		<div class="ofcwp-footer">
+			<div class="ofcwp-footer-ofc-title">
+				<h2 class="footer-ofc"> One</h2>
+				<h2 class="footer-ofc"> Future</h2>
+				<h2 class="footer-ofc"> Collective</h2>
+			</div>
+
+			<div class="footer-flex">
+				<h3 class="footer-link"> About </h3>
+				<a href="" class="footer-link"> Journey, Values and Impact</a>
+				<a href="" class="footer-link"> Team </a>
+				<a href="" class="footer-link"> Advisors and Mentors</a>
+				<a href="" class="footer-link"> Theory of Change </a>
+			</div>
+
+			<div class="footer-flex">
+				<h3 class="footer-link"> Our Work </h3>
+				<a href="" class="footer-link"> Knowledge </a>
+				<a href="" class="footer-link"> Communities </a>
+				<a href="" class="footer-link"> Advocacy </a>
+				<a href="" class="footer-link"> Fellowship </a>
+				<a href="" class="footer-link"> FemJustice Centre </a>
+				<a href="" class="footer-link"> Queer Rights Centre </a>
+			</div>
+
+			<div class="footer-flex">
+				<a href="" class="footer-link"> Resources </a>
+				<a href="" class="footer-link"> Blog </a>
+				<a href="" class="footer-link"> Get Involved </a>
+				<a href="" class="footer-link"> Hire Us </a>
+				<a href="" class="footer-link"> FAQs </a>
+				<div class="ofcwp-footer-icons">
+
+				</div>
+			</div>
+
+		</div>
+	</div><!-- .site-info -->
+
+</footer> <!-- #colophon -->
 </div><!-- #page -->
 
 <!-- Footer -->
-<footer id="colophon" class="page-footer font-small dark-footer">
+<footer class="page-footer font-small dark-footer">
 
 	<!-- Footer Links -->
 	<div class="container text-center text-md-left">
@@ -20,10 +62,10 @@
 			<div class="col-md-3 mx-auto">
 
 				<!-- Links -->
-				<h1 class="font-weight-bold mt-3 mb-4">One <br> Future <br> Collective</h1>
-				<!-- <h1 class="font-weight-bold mt-3 mb-4">Future</h1> -->
-				<!-- <h1 class="font-weight-bold mt-3 mb-4">Collective</h1> -->
-
+				<h1 class="font-weight-bold mt-3 mb-4">One</h1>
+				<h1 class="font-weight-bold mt-3 mb-4">Future</h1>
+				<h1 class="font-weight-bold mt-3 mb-4">Collective</h1>
+				
 
 			</div>
 			<!-- Grid column -->
@@ -122,17 +164,8 @@
 	<!-- Footer Links -->
 
 	<!-- Copyright -->
-	<div class="footer-copyright-container">
-		<div class="footer-copyright text-left py-3">made by
-			<a class="ofcwp-footer-link" href="https://mdbootstrap.com/"> Design Beku</a>
-		</div>
-		
-		<div class="footer-social-media-container">
-			<a href="#" class="sharer button footer-media-link"><i class="fab fa-twitter"></i></a>
-			<a href="#" class="sharer button footer-media-link"><i class="fab fa-instagram"></i></a>
-			<a href="#" class="sharer button footer-media-link"><i class="fab fa-facebook"></i></a>
-			<a href="#" class="sharer button footer-media-link"><i class="fab fa-linkedin"></i></a>
-		</div>
+	<div class="footer-copyright text-center py-3">©2020,
+		<a  class="ofcwp-footer-link" href="https://mdbootstrap.com/"> one future collective</a>
 	</div>
 	<!-- Copyright -->
 

@@ -1,0 +1,29 @@
+/* 
+#myTab li a:active{
+    background-color: #000 !important;
+    border-bottom: 3px solid #000 !important;
+} */
+
+.pink li .active,
+.pink li .active:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-bottom: 5px solid #e11e7a;
+}
+
+.ofcwp-team-member-container{
+    border: 1px solid #e11e7a;
+    margin: 10px;
+}
+
+.ofcwp-team-name {
+    color: #e11e7a;
+}
+
+.ofcwp-team-designation {
+    color: #000000;
+}
+
+.ofcwp-team-description {
+    color: #000000;
+}

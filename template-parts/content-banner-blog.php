@@ -14,7 +14,7 @@
   </div>
 
 
-  <svg class=ofcwp-banner-svg width="200px" viewbox="0 0 100 100">
+  <svg class=ofcwp-banner-svg width="250px" viewbox="0 0 100 100">
     <circle cx="50" cy="50" r="45" stroke="#E11E7A" fill="#E11E7A" />
     <text class="ofcwp-banner-text" font-size="14" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"> <?php wp_title(''); ?> </text>
   </svg>

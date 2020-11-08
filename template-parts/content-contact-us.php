@@ -43,7 +43,7 @@
 	<?php endif; ?>
 	<h2 class="ofcwp-carousel-header"><span>Clients and Partners</span> </h2>
 	<?php get_template_part('template-parts/content', 'clients-partners'); ?>
-	<div style="padding-bottom: 3rem;"></div>
+	<div style="padding-bottom: 1rem;"></div>
 
 
 <?php endif; ?>

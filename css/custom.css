@@ -8,7 +8,7 @@ textarea,
   font-family: "Lato", sans-serif;
 }
 
-.page, .blog {
+.page, .blog, .single-post {
   width: 90%;
   max-width: 1000px;
   margin: auto;
@@ -20,7 +20,7 @@ textarea,
 }
 
 .ofcwp-page-start{
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 .ofcwp-main-left{
@@ -242,7 +242,7 @@ textarea,
 .ofcwp-banner-svg {
   z-index: 10;
   position: absolute;
-  top: 300px;
+  top: 250px;
   outline: 0px;
 }
 
@@ -368,6 +368,40 @@ textarea,
 
 /* footer styling */
 
+.dark-footer{
+  background-color: #000000;
+  color: #ffffff;
+  border-top: 12px solid #e11e7a;
+}
+
+.ofcwp-footer-link{
+  color: #ffffff;
+}
+
+.footer-copyright-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-copyright{
+  padding-left: 20px;
+}
+
+.footer-media-link{
+  color: white !important;
+}
+
+.footer-media-link:hover {
+  color: #e11e7a !important;
+}
+
+.footer-social-media-container{
+  margin-top: auto;
+  margin-left: auto;
+  padding-right:20px;
+  padding-bottom: 20px;
+}
+
 .footer-flex {
   display: flex;
   flex-direction: column;
@@ -474,7 +508,8 @@ textarea,
 .widget-area {
   border: 2px solid #000000;
   margin-top: 2rem;
-  padding: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
 }
 
 .ofcwp-tags-category {
@@ -661,4 +696,50 @@ textarea,
   margin: auto;
   border: none;
   align-self: flex-end;
+}
+
+/* blog post styling */
+
+.ofcwp-post-content{
+  display: grid;
+  grid-template-columns:4fr 1fr;
+  padding: 1rem;
+}
+
+.ofcwp-post-container{
+  -webkit-box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.55);
+  padding: 1rem;
+}
+
+.ofcwp-post-banner-image{
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ofcwp-nav-post-title{
+  color: #e11e7a !important;
+  font-size: 14px;
+}
+
+.ofcwp-nav-post-subtitle{
+  color: #e11e7a !important;
+  font-size: 14px;
+}
+
+.ofcwp-post-tag{
+  font-size: 14px;
+}
+
+.ofcwp-blog-author{
+  font-weight: 600;
+}
+
+.ofcwp-blog-time{
+  font-size: 14px;
+  font-weight: 300;
 }

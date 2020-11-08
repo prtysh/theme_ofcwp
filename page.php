@@ -26,6 +26,8 @@ get_header('splash');
 
 	<?php get_template_part('template-parts/content', 'cards');	?>
 
+	<?php get_template_part('template-parts/content', 'certificate-courses');	?>
+
 	<div class=""><?php get_template_part('template-parts/content', 'carousel'); ?></div>
 
 	<?php if (get_the_title() == "Impact") : ?>
